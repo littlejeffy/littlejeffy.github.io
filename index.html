@@ -140,23 +140,21 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
             color: #fff;
             text-align: center;
-            padding: 1rem;
-            z-index: 2;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
         }
 
-        .footer-content {
-            font-size: 1rem;
-            line-height: 1.5;
+        .footer p {
+            margin-bottom: 1rem;
         }
 
         .footer a {
             color: #1DA1F2;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 0.5rem;
         }
 
         .footer a:hover {
@@ -180,23 +178,6 @@
             background-color: #0d8ce0;
         }
 
-        .footer .discord-link {
-            display: inline-block;
-            margin-left: 0.5rem;
-            background-color: #5865F2;
-            color: #fff;
-            padding: 0.3rem 0.8rem;
-            border-radius: 3px;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .footer .discord-link:hover {
-            background-color: #4752C4;
-        }
-
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             body {
@@ -218,6 +199,11 @@
             .hero-buttons .button-icon {
                 width: 16px;
                 height: 16px;
+            }
+
+            .footer {
+                padding: 1rem;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -243,14 +229,8 @@
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>Brought to you by <a href="https://gen3games.com" target="_blank">Gen3 Games</a>. <a href="https://gen3games.com" target="_blank" class="learn-more">Learn More</a></p>
-            <p>
-                Check out our other project: 
-                <a href="https://www.zerpmon.world/" target="_blank">Zerpmon</a>
-                <a href="https://discord.gg/Xwj88sGTZS" target="_blank" class="discord-link">Join the Zerpmon Discord</a>
-            </p>
-        </div>
+        <p>Brought to you by <a href="https://gen3games.com" target="_blank">Gen3 Games</a>
+        <p>Check out our other project: <a href="https://www.zerpmon.world/" target="_blank">Zerpmon</a> | <a href="https://discord.gg/Xwj88sGTZS" target="_blank">Join Zerpmon Discord</a></p>
     </footer>
 </body>
 </html>
